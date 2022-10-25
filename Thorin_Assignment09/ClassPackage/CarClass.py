@@ -18,7 +18,7 @@ class Car():
         self.isRunning = False
     
     def __str__(self):
-        return "The car color is " + self.color + " and the milage is " + str(self.milage)
+        return "The car color is " + self.color + " and the milage is " + str(self.milage) + ". Is the car on? " + self.isRunning
     
     def __repr__(self):
         return "carID = " + str(self.carID)
@@ -31,17 +31,27 @@ class Car():
     def getMilage(self):
         return self.milage
     
+    #Returns status of the engine
+    def getisRunning(self):
+        return self.isRunning
+    
     #Sets the color of the car
     def setCarColor(self, newColor):
         self.color = newColor
-        return "The color has been changed"
+        return "The color has been changed."
     
     #Sets the milage on the car
     def setMilage(self, newMilage):
         self.milage = newMilage
-        return "The milage has been changed"
+        return "The milage has been changed."
     
+    #Sets the engine status on the car
+    def setisRunning(self, status):
+        self.isRunning = status
+        return "The car status has been changed."
+    
+    #Starts car using remote start feature
     def remoteStart(self):
         self.running = True
-        return "The car has been started using the remote start feature."
+        return "The car has been started using the remote start feature. Let's ride."
     
