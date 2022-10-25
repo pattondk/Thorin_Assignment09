@@ -35,6 +35,10 @@ class Car():
     def getisRunning(self):
         return self.isRunning
     
+    #Returns carID number
+    def getCarID(self):
+        return self.carID
+    
     #Sets the color of the car
     def setCarColor(self, newColor):
         self.color = newColor
@@ -49,6 +53,11 @@ class Car():
     def setisRunning(self, status):
         self.isRunning = status
         return "The car status has been changed."
+    
+    #Sets the color of the car
+    def setCarID(self, newID):
+        self.carID = newID
+        return "The carID has been changed."
     
     #Starts car using remote start feature
     def remoteStart(self):
