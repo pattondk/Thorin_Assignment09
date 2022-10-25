@@ -54,7 +54,7 @@ class Car():
         self.isRunning = status
         return "The car status has been changed."
     
-    #Sets the color of the car
+    #Sets the ID of the car
     def setCarID(self, newID):
         self.carID = newID
         return "The carID has been changed."
