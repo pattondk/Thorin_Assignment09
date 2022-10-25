@@ -11,10 +11,10 @@ Anything else that's relevant: This is the module holding the train class.
 '''
 from _operator import truediv
 class Train(): 
-    def __init__(self, NumTrainCars, GuestCapacity, BlowWhistle):
-        self.NumTrainCars = NumTrainCars
-        self.BlowWhistle = BlowWhistle
+    def __init__(self, NumTrainCars, GuestCapacity):
+        elf.NumTrainCars = NumTrainCars
         self.validateGuestCapacity(GuestCapacity)
+        self.BlowWhistle = False 
        
     def getGuestCapacity(self):
         return self.GuestCapacity
@@ -37,12 +37,15 @@ class Train():
     def getNumTrainCars(self):
         return self.NumTrainCars
     
-    def BlowWhistle(self): 
-        self.BlowWhistle == True 
-        print("The whistle is blowing")
+    def setBlowWhistle(self): 
+        self.BlowWhistle = True 
+        return("The whistle is blowing")
         
-        self.BlowWhistle == False
+        self.BlowWhistle = False
         print("You blew the whistle!")
+        
+    def getBlowWhistle(self):
+        return self.BlowWhistle
        
     def __repr__(self):
         return "There are  " + self.NumTrainCars
