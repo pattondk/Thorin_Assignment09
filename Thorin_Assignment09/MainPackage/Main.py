@@ -10,7 +10,7 @@ Anything else that's relevant: This is the module holding the main
 '''
 from ClassPackage.TrainClass import Train
 train1 = Train(20,150,True)
-#train1.BlowWhistle()
+train1.BlowWhistle()
 print(train1.__str__())
 numGuest = train1.GuestCapacity
 print(train1.validateGuestCapacity(numGuest))
