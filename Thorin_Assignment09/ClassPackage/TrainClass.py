@@ -12,7 +12,7 @@ Anything else that's relevant: This is the module holding the train class.
 from _operator import truediv
 class Train(): 
     def __init__(self, NumTrainCars, GuestCapacity):
-        elf.NumTrainCars = NumTrainCars
+        self.NumTrainCars = NumTrainCars
         self.validateGuestCapacity(GuestCapacity)
         self.BlowWhistle = False 
        
