@@ -48,5 +48,5 @@ class Train():
         return "There are  " + self.NumTrainCars
     
     def __str__(self):
-        return ("Wedding Date is = " + self.NumTrainCars + " And the number of people attending is " 
+        return ("Wedding Date is = " + str(self.NumTrainCars) + " And the number of people attending is " 
                 + str(self.GuestCapacity))
