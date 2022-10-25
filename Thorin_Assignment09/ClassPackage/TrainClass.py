@@ -38,7 +38,7 @@ class Train():
         return self.NumTrainCars
     
     def BlowWhistle(self): 
-        self.BlowWhistle == True
+        self.BlowWhistle == True 
         print("The whistle is blowing")
         
         self.BlowWhistle == False
