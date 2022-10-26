@@ -9,12 +9,13 @@ Citations:
 Anything else that's relevant: This is the module holding the main
 '''
 from ClassPackage.TrainClass import Train
-train1 = Train(20,150,True)
-train1.BlowWhistle()
+train1 = Train(20,150)
 print(train1.__str__())
 numGuest = train1.GuestCapacity
 print(train1.validateGuestCapacity(numGuest))
 train1.setNumTrainCars(25)
+print(train1.setBlowWhistle(True))
+print(train1.WhistleOn())
 
 from ClassPackage.CarClass import Car
 car1 = Car('C1','white',5400)
